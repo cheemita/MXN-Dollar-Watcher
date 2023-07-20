@@ -61,6 +61,14 @@ const PruebaScreen = ({ navigation, route }) => {
         onChangeText={(text) => handleChange("description", text)}
       />
 
+      {/* <TextInput
+        style={styles.input}
+        placeholder="Screens"
+        placeholderTextColor="#576574"
+        value={task.screens}
+        onChangeText={(text) => handleChange("Screens", text)}
+      /> */}
+
       {!editing ? (
         <TouchableOpacity style={styles.buttonSave} onPress={handleSubmit}>
           <Text style={styles.buttonText}>Save Task</Text>

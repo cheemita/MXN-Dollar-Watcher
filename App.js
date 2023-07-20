@@ -19,12 +19,12 @@ const App = () => {
           name="HomeScreen"
           component={HomeScreen}
           options={({ navigation }) => ({
-            title: "MXN Dollar Watcher",
+            title: "MXN-Dollar Watcher",
             headerStyle: {
-              backgroundColor: "#222f3e"
+              backgroundColor: "#18325A"
             },
             headerTitleStyle: {
-              color: "#FF0000",
+              color: "white",
               textAlign: "center",
               fontSize: 20,
               width: windowWidth,
@@ -47,7 +47,7 @@ const App = () => {
           options={{
             title: 'CHART ON LIVE',
             headerStyle: {
-              backgroundColor: "#222f3e",
+              backgroundColor: "#18325A",
             },
             headerTintColor: "#fff",
             headerTitleStyle: {
@@ -61,7 +61,7 @@ const App = () => {
           options={{
             title: 'Buy/Sell prices',
             headerStyle: {
-              backgroundColor: "#222f3e",
+              backgroundColor: "#18325A",
             },
             headerTintColor: "#fff",
 
@@ -76,7 +76,7 @@ const App = () => {
           options={{
             title: 'Create a Task',
             headerStyle: {
-              backgroundColor: "#222f3e",
+              backgroundColor: "#18325A",
             },
             headerTintColor: "#fff",
 

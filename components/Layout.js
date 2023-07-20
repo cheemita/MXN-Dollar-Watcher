@@ -4,7 +4,7 @@ import { View, StatusBar, StyleSheet } from "react-native";
 const Layout = ({ children }) => {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor="#222f3e" />
+      <StatusBar backgroundColor="#18325A" />
       {children}
     </View>
   );
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 5,
-    backgroundColor: "#222f3e",
+    backgroundColor: "#18325A",
     flex: 1,
     alignItems: "center",
   },

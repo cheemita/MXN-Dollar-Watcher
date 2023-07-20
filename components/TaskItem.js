@@ -19,7 +19,7 @@ const TaskItem = ({ task, handleDelete }) => {
 
 const styles = StyleSheet.create({
   itemContainer: {
-    backgroundColor: "#333333",
+    backgroundColor: "#0E1312",
     padding: 20,
     marginVertical: 8,
     borderRadius: 5,

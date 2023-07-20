@@ -22,7 +22,6 @@ const TasksList = ({ navigation }) => {
 
   const onRefresh = React.useCallback(async () => {
     setRefreshing(true);
-    // wait(2000).then(() => setRefreshing(false));
     await getUsers();
     setRefreshing(false);
   }, []);
