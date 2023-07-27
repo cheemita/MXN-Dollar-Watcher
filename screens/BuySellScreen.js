@@ -8,16 +8,16 @@ const BuySellScreen = ({ navigation, route }) => {
     
     <View style={{ flex: 1, marginTop: 20,}}>
       <Text style={styles.bbbb}>CHOOSE ONE OPTION</Text>
-      <TouchableOpacity style={styles.chooseButton1}
-      onPress={() => navigation.navigate("BanorteChart")}>
+      <TouchableOpacity 
+      onPress={() => navigation.navigate("BanorteChart")}
+       style={styles.chooseButton1}>
         <Text style={styles.bbbb1}>BANORTE</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.chooseButton2}>
+      <TouchableOpacity
+      onPress={() => navigation.navigate("BancoAzteca")}
+      style={styles.chooseButton2}>
         <Text style={styles.bbbb1}>BANCO AZTECA</Text>
       </TouchableOpacity>
-      
-
-      <Text style={styles.bbbb}>CHOOSE ONE OPTIONasdasd</Text>
     </View>
   );
 }

@@ -8,6 +8,7 @@ import TaskFormScreen from "./screens/TaskFormScreen";
 import BuySellScreen from "./screens/BuySellScreen";
 import PruebaScreen from "./screens/PruebaScreen";
 import BanorteChart from "./screens/BanorteChart";
+import BancoAzteca from "./screens/BancoAzteca";
 
 
 const Stack = createStackNavigator();
@@ -34,8 +35,7 @@ const App = () => {
             },
             headerRight: () => (
               <TouchableOpacity //BOTON NEW
-                onPress={() => navigation.navigate("PruebaScreen")}
-              >
+                onPress={() => navigation.navigate("PruebaScreen")}>
                 <Text style={{ color: "#fff", marginRight: 40, fontSize: 15, opacity: 0 }}>
                   New
                 </Text>
@@ -61,7 +61,7 @@ const App = () => {
           name="BuySellScreen"
           component={BuySellScreen}
           options={{
-            title: 'Buy/Sell prices',
+            title: 'Foreign Exchange',
             headerStyle: {
               backgroundColor: "#18325A",
             },
@@ -92,6 +92,21 @@ const App = () => {
             component={BanorteChart}
             options={{
               title: "Banorte's conversion",
+              headerStyle: {
+                backgroundColor: "#18325A",
+              },
+              headerTintColor: "#fff",
+
+              headerTitleStyle: {
+                color: "#ffffff",
+              },
+            }}
+          />
+          <Stack.Screen
+            name="BancoAzteca"
+            component={BancoAzteca}
+            options={{
+              title: "Banco Azteca's conversion",
               headerStyle: {
                 backgroundColor: "#18325A",
               },
