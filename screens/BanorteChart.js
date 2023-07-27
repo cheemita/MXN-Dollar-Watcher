@@ -1,23 +1,13 @@
-import React, { useEffect, useState, useRef} from "react";
-import { TextInput, TouchableOpacity, Text, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
-
-
-const BuySellScreen = ({ navigation, route }) => {
+const BanorteChart = ({ navigation, route }) => {
   return (
     
-    <View style={{ flex: 1, marginTop: 20,}}>
-      <Text style={styles.bbbb}>CHOOSE ONE OPTION</Text>
-      <TouchableOpacity style={styles.chooseButton1}
-      onPress={() => navigation.navigate("BanorteChart")}>
-        <Text style={styles.bbbb1}>BANORTE</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.chooseButton2}>
-        <Text style={styles.bbbb1}>BANCO AZTECA</Text>
-      </TouchableOpacity>
-      
-
-      <Text style={styles.bbbb}>CHOOSE ONE OPTIONasdasd</Text>
+    <View style={{ flex: 1}}>
+      <WebView
+        source={{ uri: 'https://www.banorte.com/wps/portal/ixe/Home/indicadores/tipo-de-cambio' }}
+        style={{ flex: 1 }}
+      />
     </View>
   );
 }
@@ -86,4 +76,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BuySellScreen;
+export default BanorteChart;

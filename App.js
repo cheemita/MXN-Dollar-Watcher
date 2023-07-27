@@ -7,6 +7,8 @@ import HomeScreen from "./screens/HomeScreen";
 import TaskFormScreen from "./screens/TaskFormScreen";
 import BuySellScreen from "./screens/BuySellScreen";
 import PruebaScreen from "./screens/PruebaScreen";
+import BanorteChart from "./screens/BanorteChart";
+
 
 const Stack = createStackNavigator();
 const windowWidth = Dimensions.get('window').width;
@@ -70,21 +72,36 @@ const App = () => {
             },
           }}
         />
-      <Stack.Screen
-          name="PruebaScreen"
-          component={PruebaScreen}
-          options={{
-            title: 'Create a Task',
-            headerStyle: {
-              backgroundColor: "#18325A",
-            },
-            headerTintColor: "#fff",
+        <Stack.Screen
+            name="PruebaScreen"
+            component={PruebaScreen}
+            options={{
+              title: 'Create a Task',
+              headerStyle: {
+                backgroundColor: "#18325A",
+              },
+              headerTintColor: "#fff",
 
-            headerTitleStyle: {
-              color: "#ffffff",
-            },
-          }}
-        />
+              headerTitleStyle: {
+                color: "#ffffff",
+              },
+            }}
+          />
+          <Stack.Screen
+            name="BanorteChart"
+            component={BanorteChart}
+            options={{
+              title: "Banorte's conversion",
+              headerStyle: {
+                backgroundColor: "#18325A",
+              },
+              headerTintColor: "#fff",
+
+              headerTitleStyle: {
+                color: "#ffffff",
+              },
+            }}
+          />
       </Stack.Navigator>
     </NavigationContainer>
   );

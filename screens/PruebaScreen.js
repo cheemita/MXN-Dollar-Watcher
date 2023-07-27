@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useRef} from "react";
+import React, { useEffect, useState } from "react";
 import { TextInput, TouchableOpacity, Text, StyleSheet, View } from "react-native";
-import { WebView } from 'react-native-webview';
 import { saveTask, getTask, updateTask } from "../api";
 import Layout from "../components/Layout";
 
@@ -22,7 +21,7 @@ const PruebaScreen = ({ navigation, route }) => {
       navigation.setOptions({ headerTitle: "Updating Task" });
       (async () => {
         const task = await getTask(route.params.id);
-        setTask({ title: task.title, description: task.description });
+        setTask({ title: task.title, description: task.description});
       })();
     }
   }, []);
