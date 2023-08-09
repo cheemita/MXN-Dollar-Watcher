@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "myapp",
-    "slug": "myapp",
+    "slug": "mxn-usd-watcher",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cheemita.mxnusdwatcher"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f80e37ea-ab25-46b5-8190-f83c6ae2ba6a"
+      }
+    },
+    "owner": "cheemita"
   }
 }
