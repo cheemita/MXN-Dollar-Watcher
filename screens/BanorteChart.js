@@ -10,6 +10,7 @@ const BanorteChart = ({ navigation, route }) => {
         source={{ uri: 'https://www.banorte.com/wps/portal/ixe/Home/indicadores/tipo-de-cambio' }}
         style={{ flex: 1 }}
       />
+      {/* document.querySelector("#layoutContainers > div > div.wptheme2Col.ixe > div > div > div > div.columns2A") */}
     </View>
   );
 }

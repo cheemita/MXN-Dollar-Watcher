@@ -1,10 +1,11 @@
-const API = "http://192.168.1.75:3000";
+const API = "http://192.168.91.36:3000";
 
 export const deleteTask = async (id) => {
   await fetch(`${API}/tasks/${id}`, {
     method: "DELETE",
   });
 };
+
 
 export const getTasks = async () => {
   
@@ -13,8 +14,6 @@ export const getTasks = async () => {
   });
   return await res.json();
 };
-
-
 
 export const saveTask = async (newTask) => {
   const res = await fetch(`${API}/tasks`, {
