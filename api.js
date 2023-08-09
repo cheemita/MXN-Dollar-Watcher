@@ -1,4 +1,4 @@
-const API = "http://192.168.91.36:3000";
+const API = "http://192.168.1.82:3000";
 
 export const deleteTask = async (id) => {
   await fetch(`${API}/tasks/${id}`, {
