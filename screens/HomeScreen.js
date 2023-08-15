@@ -1,48 +1,62 @@
 import React from "react";
-import Layout from "../components/Layout";
-import { TouchableOpacity, Text, View, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, View, StyleSheet, StatusBar } from "react-native";
 
 
 
 const HomeScreen = ({ navigation }) => {
+
   return (
-    <Layout>
 
-      <View style={{ flex: 1, marginTop: 20, }}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("TaskFormScreen")}
-          style={styles.chooseButton1}>
-          <Text style={styles.bbbb1}>CHART ON LIVE</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("BuySellScreen")}
-          style={styles.chooseButton2}>
-          <Text style={styles.bbbb2}>FOREIGN EXCHANGES</Text>
-        </TouchableOpacity>
+    <View style={{ flex: 1, margin: 15, }}>
+      <StatusBar backgroundColor="#18325A" />
+      <TouchableOpacity
+        onPress={() => navigation.navigate("TaskFormScreen")}
+        style={styles.chooseButton2}>
+        <Text style={styles.bbbb2}>CHART ON LIVE</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("BuySellScreen")}
+        style={styles.chooseButton2}>
+        <Text style={styles.bbbb2}>FOREIGN EXCHANGES</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.chooseButton2} onPress={() => navigation.navigate("MONEDAS")}>
+        <Text style={styles.bbbb2}>COIN TYPE</Text>
+      </TouchableOpacity>
 
-      </View>
+    </View>
 
-    </Layout>
   );
 };
 
 
 const styles = StyleSheet.create({
-
-  bbbb1: {
+  container: {
+    paddingTop: 5,
+    backgroundColor: "#18325A",
+    flex: 1,
+    alignItems: "center",
+  },
+  title: {
+    color: "#ffffff",
     fontSize: 20,
+    textAlign: "center",
+    marginTop: 10,
   },
   bbbb2: {
-    fontSize: 20,
-  },
-  chooseButton1: {
-    alignItems: "center",
-    paddingTop: "1%"
-
+    fontSize: 18,
+    color: "white"
   },
   chooseButton2: {
+    marginTop: 15,
+    justifyContent: "space-around",
     alignItems: "center",
-    paddingTop: "5%"
+    borderRadius: 10,
+    borderColor: "#ffff",
+    borderWidth: 1,
+    padding: 25,
+    backgroundColor: "#1472AA",
+
   },
 
 });
