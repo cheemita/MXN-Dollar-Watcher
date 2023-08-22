@@ -5,7 +5,7 @@ import { Text, TouchableOpacity, View, Dimensions } from "react-native";
 
 import HomeScreen from "./screens/HomeScreen";
 import TaskFormScreen from "./screens/TaskFormScreen";
-import BuySellScreen from "./screens/BuySellScreen";
+import Map from "./screens/Map";
 import DatosApi from "./screens/DatosApi";
 import DatosApi2 from "./screens/DatosApi2";
 import DatosApi3 from "./screens/DatosApi3";
@@ -13,7 +13,7 @@ import DatosApi4 from "./screens/DatosApi4";
 import DatosApi5 from "./screens/DatosApi5";
 import DatosApi6 from "./screens/DatosApi6";
 import MONEDAS from "./screens/MONEDAS";
-import charts from "./screens/charts";
+import Graficos from "./screens/Graphs";
 
 const Stack = createStackNavigator();
 const windowWidth = Dimensions.get('window').width;
@@ -54,8 +54,8 @@ const App = () => {
           }}
         />
         <Stack.Screen
-          name="BuySellScreen"
-          component={BuySellScreen}
+          name="Map"
+          component={Map}
           options={{
             title: 'Foreign Exchange',
             headerStyle: {
@@ -178,8 +178,8 @@ const App = () => {
           }}
         />
         <Stack.Screen
-          name="charts"
-          component={charts}
+          name="Graficos"
+          component={Graficos}
           options={{
             title: 'Graphics',
             headerStyle: {

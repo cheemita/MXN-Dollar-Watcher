@@ -15,7 +15,7 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.bbbb2}>CHART ON LIVE</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => navigation.navigate("BuySellScreen")}
+        onPress={() => navigation.navigate("Map")}
         style={styles.chooseButton2}>
         <Text style={styles.bbbb2}>FOREIGN EXCHANGES</Text>
       </TouchableOpacity>

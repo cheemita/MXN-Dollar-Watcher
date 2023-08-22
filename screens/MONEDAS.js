@@ -29,7 +29,7 @@ const MONEDAS = ({ navigation }) => {
           <Text style={styles.bbbb2}>MXN peso VS Turkish lira</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={styles.chooseButton2} onPress={() => navigation.navigate("charts")}>
+          style={styles.chooseButton2} onPress={() => navigation.navigate("Graficos")}>
           <Text style={styles.bbbb2}>Graphics</Text>
         </TouchableOpacity>
 
